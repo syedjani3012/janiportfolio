@@ -1,10 +1,12 @@
+import Home from "./components/Home";
+import Navrbar from "./components/Navrbar";
 
 function App() {
   return (
-    <>
-    <div className="grid place-items-center h-screen">
-    <h1 className="text-red-700 text-4xl font-bold">Hello world</h1></div>
-    </>
+    <div>
+      <Navrbar/>
+      <Home/>
+    </div>
   );
 }
 
