@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import {FaBars, FaLinkedin, FaTimes} from 'react-icons/fa'
-import {FaGithub} from 'react-icons/fa'
-import {FaInstagram} from 'react-icons/fa'
+import {FaBars, FaTimes} from 'react-icons/fa'
 
 function Navrbar() {
 
-  const [nav,setnav]=useState(0)
+  const [nav,setnav]=useState(false)
 
   const links=[
     {
