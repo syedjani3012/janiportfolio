@@ -6,7 +6,9 @@ function MyPortfolio() {
 
   const sourcecode=()=>{
     proj.map(({id,href})=>{
-    window.open(href)
+    <div key={id}>
+    window.open({href})
+    </div>
   })
   }
   const proj=[
