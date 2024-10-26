@@ -1,6 +1,7 @@
 import React from 'react'
 import image from '../assets/jani.jpeg'
 import { FaArrowRight } from "react-icons/fa";
+import {Link} from 'react-scroll'
 
 function Home() {
   return (
@@ -10,12 +11,12 @@ function Home() {
         <h2 className='text-4xl sm:7xl font-bold text-white'>I'm a Full Stack <br></br>Developer</h2>
         <p className='text-gray-500 py-4 max-w-md'>I have 3 years of experience building web applications using react, tailwind css and Java</p>
       <div className='flex'>
-      <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+      <Link to="portfolio" smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
         Portfolio
         <span className='group-hover:rotate-90 duration-300'>
           <FaArrowRight size={25}/>
         </span>
-      </button>
+      </Link>
       </div>
       </div>
       <div>
