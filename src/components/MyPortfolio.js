@@ -1,16 +1,10 @@
 import React from 'react'
 import pass from '../assets/passgen.jpg'
 import back from '../assets/backgr.png'
+import port from '../assets/portfolio.png'
 
 function MyPortfolio() {
 
-  const sourcecode=()=>{
-    proj.map(({id,href})=>{
-    <div key={id}>
-    window.open({href})
-    </div>
-  })
-  }
   const proj=[
     {
       id:1,
@@ -21,6 +15,11 @@ function MyPortfolio() {
       id:2,
       src:back,
       href:"https://github.com/syedjani3012/ReactBGchange"
+    },
+    {
+      id:3,
+      src: port,
+      href:"https://github.com/syedjani3012/janiportfolio"
     }
   ];
   return (
@@ -31,14 +30,14 @@ function MyPortfolio() {
           <p className='text-xl text-white py-6'>check out some of my work right here</p>
         </div>
     
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-12 gap-8 sm:px-0'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-10 gap-8 sm:px-0'>
         {
           proj.map(({id,src,href})=>(
             <div key={id} className='shadow-md shadow-gray-400 rounded-lg duration-200 hover:scale-105'>
             <img src={src} alt=''></img>
             <div className='flex items-center justify-center'>
             <button className='w-1/2 px-6 py-3 m-4 duration-200'>Demo</button>
-            <button className='w-1/2 px-6 py-3 m-4 duration-200' onClick={sourcecode}>Code</button>
+            <button className='w-1/2 px-6 py-3 m-4 duration-200' onClick={()=>(window.open(href))}>Code</button>
             </div>
             </div>
           ))

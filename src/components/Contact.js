@@ -11,7 +11,7 @@ function Contact() {
             <input className='my-2 w-1/4 rounded-lg text-black' type="text" name='name' placeholder='Enter your name'></input>
             <input className='my-2 w-1/4 rounded-lg text-black'type="email" name='email' placeholder='Enter your mail'></input>
             <input className='my-2 w-1/2 h-24 rounded-lg text-black'type="text" name='message' placeholder='Enter your message'></input>
-            <button className='text-white bg-cyan-500 rounded-full w-1/6'>Get in touch</button>
+            <button className='text-white bg-cyan-500 rounded-full w-1/6'>Let's Talk</button>
             </form>
             </div>
         </div>

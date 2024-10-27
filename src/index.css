@@ -7,3 +7,21 @@
 :root{
     font-family: "Inter", sans-serif;
 }
+
+@font-face {
+    font-family: anzo1;
+    src: url('./assets/file2.woff2');
+}
+
+@font-face {
+    font-family: anzo2;
+    src: url('./assets/file5.woff2');
+}
+
+#tiltdiv{
+    width: fit-content;
+}
+
+#homein{
+    perspective: 1000px;
+}
